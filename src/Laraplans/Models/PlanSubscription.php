@@ -46,6 +46,8 @@ class PlanSubscription extends Model implements PlanSubscriptionInterface
         'trial_ends_at',
         'starts_at',
         'ends_at',
+        'provider',
+        'provider_id',
         'canceled_at'
     ];
 

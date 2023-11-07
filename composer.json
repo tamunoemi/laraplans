@@ -8,6 +8,14 @@
         "php": ">=7.1.3",
         "nesbot/carbon": "~2.0"
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tamunoemi\\Laraplans\\LaraplansServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "orchestra/testbench": "~3.8.0",

@@ -16,6 +16,8 @@ class CreatePlanSubscriptionsTable extends Migration
     {
         Schema::create('plan_subscriptions', function (Blueprint $table) {
             $table->increments('id');
+            $table->enum('provider', ['paddle', 'stripe','warriorplus','jvzoo','default'])->default('default')->nullable();
+            $table->string('provider_id')->nullable()->comment('Referece Id from the provider subscription table ');
             $table->integer('subscribable_id')->unsigned()->index();
             $table->string('subscribable_type')->index();
             $table->integer('plan_id')->unsigned();
