@@ -15,9 +15,10 @@ class CreatePlansTable extends Migration
         Schema::create('plans', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('name_alias')->comment("The name in a format that will be shown to users.");
             $table->text('description')->nullable();
 
-
+ 
             $table->json('price')->comment("Json prices in the format {per_month:'', per_year: ''}");
 
             $table->enum('interval', ['day', 'week', 'month', 'year'])->default('month');
