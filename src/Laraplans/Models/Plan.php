@@ -17,7 +17,6 @@ class Plan extends Model implements PlanInterface
      */
     protected $fillable = [
         'name',
-        'name_alias',
         'description',
         'price',
         'interval',
