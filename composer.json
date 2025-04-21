@@ -6,7 +6,7 @@
     "type": "library",
     "require": {
         "php": ">=7.1.3",
-        "nesbot/carbon": "~2.0"
+        "nesbot/carbon": "*"
     },
     "extra": {
         "laravel": {
