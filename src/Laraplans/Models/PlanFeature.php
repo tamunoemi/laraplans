@@ -15,12 +15,12 @@ class PlanFeature extends Model implements PlanFeatureInterface
      *
      * @var array
      */
-    protected $fillable = [
-        'plan_id',
-        'code',
-        'value',
-        'sort_order'
-    ];
+    /**
+     * The attributes that are not mass assignable.
+     *
+     * @var array
+     */
+    protected $guarded = [];
 
     /**
      * The attributes that should be mutated to dates.

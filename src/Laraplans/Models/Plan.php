@@ -15,34 +15,12 @@ class Plan extends Model implements PlanInterface
      *
      * @var array
      */
-    protected $fillable = [
-        'name',
-        'description',
-        'price',
-        'interval',
-        'interval_count',
-        'trial_period_days',
-        'sort_order',
-        'type',
-        'role_ids',
-        'monthly_limit',
-        'bulk_limit',
-        'validity',
-        'validity_extra_info',
-        'is_default',
-        'visible',
-        'highlight',
-        'user_can_resell',
-        'deleted',
-        'jvzoo_id',
-        'warriorplus_id',
-        'paddle_id',
-        'appsumo_id',
-        'clickbank_id',
-        'stripe_id'
-
-
-    ];
+     /**
+     * The attributes that are not mass assignable.
+     *
+     * @var array
+     */
+    protected $guarded = [];
 
     /**
      * The attributes that should be mutated to dates.

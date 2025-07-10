@@ -13,12 +13,12 @@ class PlanSubscriptionUsage extends Model implements PlanSubscriptionUsageInterf
      *
      * @var array
      */
-    protected $fillable = [
-        'subscription_id',
-        'code',
-        'valid_until',
-        'used'
-    ];
+    /**
+     * The attributes that are not mass assignable.
+     *
+     * @var array
+     */
+    protected $guarded = [];
 
     /**
      * The attributes that should be mutated to dates.

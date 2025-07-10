@@ -40,16 +40,12 @@ class PlanSubscription extends Model implements PlanSubscriptionInterface
      *
      * @var array
      */
-    protected $fillable = [
-        'plan_id',
-        'name',
-        'trial_ends_at',
-        'starts_at',
-        'ends_at',
-        'provider',
-        'provider_id',
-        'canceled_at'
-    ];
+     /**
+     * The attributes that are not mass assignable.
+     *
+     * @var array
+     */
+    protected $guarded = [];
 
     /**
      * The attributes that should be mutated to dates.
